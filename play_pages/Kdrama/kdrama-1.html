@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start-Up</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="../../img/la-tele.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="../../index.html" class="logo">
+                Seoul<span>Screen</span>
+            </a>
+            <!--navbar-->
+            <div class="navbar">
+                <a href="../../index.html" class="nav-link nav-active">
+                    <i class='bx bx-home'></i>
+                    <span class="nav-link-title">Home</span>
+                </a>
+                <a href="../../index.html" class="nav-link">
+                    <i class='bx bxs-hot'></i>
+                    <span class="nav-link-title">Trending</span>
+                </a>
+                <a href="../../index.html" class="nav-link">
+                    <i class='bx bx-cctv'></i>
+                    <span class="nav-link-title">Korean Drama</span>
+                </a>
+                <a href="../../index.html" class="nav-link">
+                    <i class='bx bx-tv'></i>
+                    <span class="nav-link-title">Korean Movies</span>
+                </a>
+                <a href="../../index.html" class="nav-link">
+                    <i class='bx bx-heart'></i>
+                    <span class="nav-link-title">Favourite</span>
+                </a>
+            </div>
+            <div class="search-box">
+                <input type="search" name="" id="search-input" placeholder="Search movie">
+                <i class='bx bx-search'></i>
+            </div>
+            <a href="#" class="user">
+                <img src="../../img/user.png" alt="" class="user-pic" onclick="toggleMenu()">
+            </a>
+
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="../../img/user.png" alt="">
+                        <h2>james aldrino</h2>
+                    </div>
+                    <hr>
+    
+                    <a href="" class="sub-menu-link">
+                        <i class='bx bxs-user'></i>
+                        <p>Edit Profile</p>
+                    <span>></span>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <i class='bx bxs-cog'></i>
+                        <p>settings & Privacy</p>
+                    <span>></span>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <i class='bx bxs-help-circle' ></i>
+                        <p>Help & Support</p>
+                    <span>></span>
+                    </a>
+                    <a href="../../login.html" class="sub-menu-link">
+                        <i class='bx bxs-log-out'></i>
+                        <p>Logout</p>
+                    <span>></span>
+                    </a>
+    
+                </div>
+            </div>
+    </header>
+    <!--play Movie Container-->
+    <div class="play-container container">
+        <!--play image-->
+        <img src="img-play/kdrama-1.jpg" alt="" class="play-img">
+        <!--play text-->
+        <div class="play-text">
+            <h2>Start-Up</h2>
+            <!--Ratings-->
+            <div class="rating">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <!--Tags-->
+            <div class="tags">
+                <span>Romance</span>
+                <span>Business</span>
+                <span>Comedy</span>
+
+            </div>
+            <!--trailer btn-->
+            <a href="#" class="watch-btn">
+                <i class='bx bx-right-arrow'></i>
+                <span>Watch the trailer</span>
+            </a>
+        </div>
+         
+            <!--video content-->
+            <div class="video-container">
+                <!--video- box-->
+                <div class="video-box">
+                    <video id="myvideo" src="img-play/trailer-kdrama-1.mp4" controls></video>
+                    <!--close video icon-->
+                    <i class='bx bx-x close-video'></i>
+                </div>
+            </div>
+
+    </div>
+    <!--About-->
+    <div class="about-movie container">
+        <h2>Start-Up</h2>
+        <p>Needing to make $90k to open her own business, Seo Dal-Mi drops out of a university and takes up part-time work. She dreams of becoming someone like Steve Jobs.
+
+            Nam Do-San is the founder of Samsan Tech. He is excellent with mathematics. He started Samsan Tech two years ago, but the company is not doing well. Somehow, Nam Do-San becomes Seo Dal-Mi’s first love. They cheer each others start and growth.
+        </p>
+        <!--movie cast-->
+        <h2 class="cast-heading">Movie Cast</h2>
+        <div class="cast">
+            <div class="cast-box">
+                <img src="img-play/kdram-1-cast-1.jpg" alt="" class="cast-img">
+                <span class="cast-title">Bae Suzy</span>
+            </div>
+            <div class="cast-box">
+                <img src="img-play/kdram-1-cast-2.jpg" alt="" class="cast-img">
+                <span class="cast-title">Nam Joo Hyuk</span>
+            </div>
+            <div class="cast-box">
+                <img src="img-play/kdram-1-cast-3.jpg" alt="" class="cast-img">
+                <span class="cast-title">Kim Seon Ho</span>
+            </div>
+            <div class="cast-box">
+                <img src="img-play/kdram-1-cast-4.jpg" alt="" class="cast-img">
+                <span class="cast-title">Kang Han Na</span>
+            </div>
+            <div class="cast-box">
+                <img src="img-play/kdram-1-cast-5.jpg" alt="" class="cast-img">
+                <span class="cast-title">Kim Hae Sook</span>
+            </div>
+            <div class="cast-box">
+                <img src="img-play/kdram-1-cast-6.jpg" alt="" class="cast-img">
+                <span class="cast-title">Kim Do Wan</span>
+            </div>
+        </div>
+    </div>
+
+
+      <!--video content-->
+      <div class="video-container-episode">
+          <!--video- box-->
+          <div class="video-box-episode">
+              <video id="myvideo-episode" src="img-play/kdrama-1-episode1.mp4" controls></video>
+              <!--close video icon-->
+              <i class='bx bx-x close-video-episode'></i>
+          </div>
+      </div>
+
+
+   <!--Episode Section-->
+   <div class="episodes container">
+    <h2 class=" episode-heading">Episodes</h2>
+
+        <div class="episode-box">
+            <a href="#" class="watch-btn1">
+                <img src="img-play/kdram-1-episode.jpg" alt="" class="episode-img">
+                <span class="episode-title">
+                    <i class='bx bxs-show'></i> Episode 1
+                </span>          
+              </a>
+        </div>
+        <div class="episode-box">
+            <a href="#" class="watch-btn1">
+                <img src="img-play/kdram-1-episode.jpg" alt="" class="episode-img">
+                <span class="episode-title">
+                    <i class='bx bxs-show'></i> Episode 2
+                </span>          
+              </a>
+        </div>
+        <div class="episode-box">
+            <a href="#" class="watch-btn1">
+                <img src="img-play/kdram-1-episode.jpg" alt="" class="episode-img">
+                <span class="episode-title">
+                    <i class='bx bxs-show'></i> Episode 3
+                </span>          
+              </a>
+        </div>
+        <div class="episode-box">
+            <a href="#" class="watch-btn1">
+                <img src="img-play/kdram-1-episode.jpg" alt="" class="episode-img">
+                <span class="episode-title">
+                    <i class='bx bxs-show'></i> Episode 4
+                </span>          
+              </a>
+        </div>
+        <div class="episode-box">
+            <a href="#" class="watch-btn1">
+                <img src="img-play/kdram-1-episode.jpg" alt="" class="episode-img">
+                <span class="episode-title">
+                    <i class='bx bxs-show'></i> Episode 5
+                </span>          
+              </a>
+        </div>
+        
+  
+    </div>
+   
+
+   
+
+<!-- copyriaght-->
+<div class="copyright">
+    <p>&copy; SEOUL SCREEN all right Reserved</p>
+</div>
+
+
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/play.js"> </script>
+    <script src="../../js/SubMenu.js"> </script>
+</body>
+</html>

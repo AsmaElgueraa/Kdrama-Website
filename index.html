@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seoul Screen</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="img/la-tele.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <!-------------------------------header------------------------------------->
+    <header>
+        <div class="nav container">
+            <a href="index.html" class="logo">
+                Seoul<span>Screen</span>
+            </a>
+            <!-----navbar----->
+            <div class="navbar">
+                <a href="#home" class="nav-link ">
+                    <i class='bx bx-home'></i>
+                    <span class="nav-link-title">Home</span>
+                </a>
+                <a href="#popular" class="nav-link">
+                    <i class='bx bxs-hot'></i>
+                    <span class="nav-link-title">Trending</span>
+                </a>
+                <a href="#movies kdrama" class="nav-link">
+                    <i class='bx bx-cctv'></i>
+                    <span class="nav-link-title">Korean Drama</span>
+                </a>
+                <a href="#movies kmovies" class="nav-link">
+                    <i class='bx bx-tv'></i>
+                    <span class="nav-link-title">Korean Movies</span>
+                </a>
+                <a href="#home" class="nav-link">
+                    <i class='bx bx-heart'></i>
+                    <span class="nav-link-title">Favourite</span>
+                </a>
+            </div>
+        
+            <div class="search-box">
+                <input type="search" name="" id="search-input" placeholder="Search kdrama/kmovie">
+                <i class='bx bx-search'></i>
+            </div>
+
+            <a href="#" class="user">
+                <img src="img/user.png" alt="" class="user-pic" onclick="toggleMenu()">
+            </a>
+
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="img/user.png" alt="">
+                        <h2>Asma Elgueraa</h2>
+                    </div>
+                    <hr>
+                    <a href="" class="sub-menu-link">
+                        <i class='bx bxs-user'></i>
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <i class='bx bxs-cog'></i>
+                        <p>settings & Privacy</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <i class='bx bxs-help-circle' ></i>
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+                    <a href="login.html" class="sub-menu-link">
+                        <i class='bx bxs-log-out'></i>
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+     <!-------------------------------home section ------------------------------------->
+    
+
+    <section class="home container" id="home">
+     <!--video content-->
+    <div class="video-container">
+        <!--video- box-->
+        <div class="video-box">
+            <video id="myvideo" src="img/home-trailer.mp4" controls></video>
+            <!--close video icon-->
+            <i class='bx bx-x close-video'></i>
+        </div>
+    </div>
+        <!--home img-->
+        <img src="img/home.jpg" alt="" class="home-img">
+        
+        <!--home texte-->
+        <div class="home-text">
+            <h1 class="home-title">bloodhounds</h1>
+            <p>Releasing 10 January</p>
+            <a href="#" class="watch-btn">
+                <i class='bx bx-right-arrow'></i>
+                <span>Watch the trailer</span>
+            </a>
+        </div>
+    </section>
+
+
+    <!-------------------------------popular section ------------------------------------->
+
+    <section class="popular container" id="popular">
+        <!--heading-->
+        <div class="heading">
+            <h2 class="heading-title">Popular KMovies/Kdrama</h2>
+            <!--swiper buttons-->
+            <div class="swiper-btn">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+           </div>
+        </div>
+
+        <!--content-->
+        <div class="popular-content swiper">
+            <div class="swiper-wrapper">
+                <!--movies box 1-->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                         <img src="img/popular/trend-1.jpg" alt="" class="movie-box-img">
+                         <div class="box-text">
+                            <h2 class="movie-title">Death's Game</h2>
+                            <span class="movie-type">Fantasy</span>
+                            <a href="play_pages/Popular/pop-1.html" class="watch-btn play-btn">
+                                <i class='bx bx-right-arrow'></i>
+                            </a>
+                         </div>
+                    </div>
+                </div>
+                <!--movies box 2-->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                         <img src="img/popular/trend-2.jpg" alt="" class="movie-box-img">
+                         <div class="box-text">
+                            <h2 class="movie-title">Sweet Home S2</h2>
+                            <span class="movie-type">Action/Horror/SC-Fi</span>
+                            <a href="play_pages/Popular/pop-2.html" class="watch-btn play-btn">
+                                <i class='bx bx-right-arrow'></i>
+                            </a>
+                         </div>
+                    </div>
+                </div>
+                <!--movies box 3-->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                         <img src="img/popular/trend-3.jpg" alt="" class="movie-box-img">
+                         <div class="box-text">
+                            <h2 class="movie-title">Night Has Come</h2>
+                            <span class="movie-type">Thriller/Mystery/Horror</span>
+                            <a href="#" class="watch-btn play-btn">
+                                <i class='bx bx-right-arrow'></i>
+                            </a>
+                         </div>
+                    </div>
+                </div>
+                <!--movies box 4-->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                         <img src="img/popular/trend-4.jpg" alt="" class="movie-box-img">
+                         <div class="box-text">
+                            <h2 class="movie-title">Tell Me That You <br>Love Me</h2>
+                            <span class="movie-type">Romance/Melodrama</span>
+                            <a href="#" class="watch-btn play-btn">
+                                <i class='bx bx-right-arrow'></i>
+                            </a>
+                         </div>
+                    </div>
+                </div>
+                <!--movies box 5-->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                         <img src="img/popular/trend-5.jpg" alt="" class="movie-box-img">
+                         <div class="box-text">
+                            <h2 class="movie-title">Vigilante</h2>
+                            <span class="movie-type">Action/Thriller/Crime</span>
+                            <a href="#" class="watch-btn play-btn">
+                                <i class='bx bx-right-arrow'></i>
+                            </a>
+                         </div>
+                    </div>
+                </div>
+              
+                <!--movies box 6-->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                         <img src="img/popular/trend-6.jpg" alt="" class="movie-box-img">
+                         <div class="box-text">
+                            <h2 class="movie-title">Brave Citizen</h2>
+                            <span class="movie-type">Action/Comedy/Drama</span>
+                            <a href="#" class="watch-btn play-btn">
+                                <i class='bx bx-right-arrow'></i>
+                            </a>
+                         </div>
+                    </div>
+                </div>
+                <!--movies box 7-->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                         <img src="img/popular/trend-7.jpg" alt="" class="movie-box-img">
+                         <div class="box-text">
+                            <h2 class="movie-title">Castaway Diva</h2>
+                            <span class="movie-type">Romance/Comedy/Music</span>
+                            <a href="#" class="watch-btn play-btn">
+                                <i class='bx bx-right-arrow'></i>
+                            </a>
+                         </div>
+                    </div>
+                </div>
+                <!--movies box 8-->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                         <img src="img/popular/trend-8.jpg" alt="" class="movie-box-img">
+                         <div class="box-text">
+                            <h2 class="movie-title">Twinkling <br>Watermelon</h2>
+                            <span class="movie-type">Romance/Fantasy</span>
+                            <a href="#" class="watch-btn play-btn">
+                                <i class='bx bx-right-arrow'></i>
+                            </a>
+                         </div>
+                    </div>
+                </div>
+              </div>
+    </section>
+
+    <!-------------------------------Korean Drama section ------------------------------------->
+
+
+     <!--movie section-->
+    <section class="movies container" id="movies kdrama" >
+        <!--heading of movies-->
+        <div class="heading">
+            <h2 class="heading-title">Korean Drama</h2>
+        </div>
+        <!--Movies content-->
+        <div class="movies-content">
+            <!--Movies Box 1-->
+            <div class="movie-box">
+                <img src="img/kdrama/kdrama-1.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                   <h2 class="movie-title">Start-Up</h2>
+                   <span class="movie-type">Business/Romance</span>
+                   <a href="play_pages/Kdrama/kdrama-1.html" class="watch-btn play-btn">
+                       <i class='bx bx-right-arrow'></i>
+                   </a>
+                </div>
+           </div>
+            <!--Movies Box 2-->
+            <div class="movie-box">
+                <img src="img/kdrama/kdrama-2.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                   <h2 class="movie-title">Squid Game</h2>
+                   <span class="movie-type">Action/Thriller/Mystery</span>
+                   <a href="play_pages/Kdrama/kdrama-2.html" class="watch-btn play-btn">
+                       <i class='bx bx-right-arrow'></i>
+                   </a>
+                </div>
+           </div>
+            <!--Movies Box 3-->
+            <div class="movie-box">
+                <img src="img/kdrama/kdrama-3.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                   <h2 class="movie-title">Goblin</h2>
+                   <span class="movie-type">Romance/Fantasy</span>
+                   <a href="#" class="watch-btn play-btn">
+                       <i class='bx bx-right-arrow'></i>
+                   </a>
+                </div>
+           </div>
+            <!--Movies Box 4-->
+            <div class="movie-box">
+                <img src="img/kdrama/kdrama-4.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                   <h2 class="movie-title">He Is Psychometric</h2>
+                   <span class="movie-type">Thriller/Mystery/Fantasy</span>
+                   <a href="#" class="watch-btn play-btn">
+                       <i class='bx bx-right-arrow'></i>
+                   </a>
+                </div>
+           </div>
+            <!--Movies Box 5-->
+            <div class="movie-box">
+                <img src="img/kdrama/kdrama-5.jpeg" alt="" class="movie-box-img">
+                <div class="box-text">
+                   <h2 class="movie-title">Happiness</h2>
+                   <span class="movie-type">Action/Thriller/Sci-Fi</span>
+                   <a href="#" class="watch-btn play-btn">
+                       <i class='bx bx-right-arrow'></i>
+                   </a>
+                </div>
+           </div>
+            <!--Movies Box 6-->
+            <div class="movie-box">
+                <img src="img/kdrama/kdrama-6.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                   <h2 class="movie-title">Taxi Driver</h2>
+                   <span class="movie-type">Action/Thriller/Crime</span>
+                   <a href="#" class="watch-btn play-btn">
+                       <i class='bx bx-right-arrow'></i>
+                   </a>
+                </div>
+           </div>
+            <!--Movies Box 7-->
+            <div class="movie-box">
+                <img src="img/kdrama/kdrama-7.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                   <h2 class="movie-title">The King: <br>Eternal Monarch</h2>
+                   <span class="movie-type">Mystery/Romance/Sci-Fi</span>
+                   <a href="#" class="watch-btn play-btn">
+                       <i class='bx bx-right-arrow'></i>
+                   </a>
+                </div>
+           </div>
+            <!--Movies Box 8-->
+            <div class="movie-box">
+                <img src="img/kdrama/kdrama-8.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                   <h2 class="movie-title">The Glory</h2>
+                   <span class="movie-type">Thriller/Melodrama</span>
+                   <a href="#" class="watch-btn play-btn">
+                       <i class='bx bx-right-arrow'></i>
+                   </a>
+                </div>
+           </div>
+        </div>
+    </section>
+
+    <!--next page-->
+    <div class="next-page">
+        <a href="More-pages/kdrama.html" class="next-btn">More</a>
+    </div>
+
+
+    <!-------------------------------Korean Movies section ------------------------------------->
+
+       <!--movie section-->
+       <section class="movies container" id="movies kmovies">
+        <!--heading of movies-->
+        <div class="heading">
+            <h2 class="heading-title">Korean Movies</h2>
+        </div>
+        <!--Movies content-->
+        <div class="movies-content">
+            <!--Movies Box 1-->
+            <div class="movie-box">
+                <img src="img/kmovie/kmovie-1.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                   <h2 class="movie-title">20th Century Girl</h2>
+                   <span class="movie-type">Romance/Melodrama</span>
+                   <a href="play_pages/Kmovies/movie-1.html" class="watch-btn play-btn">
+                       <i class='bx bx-right-arrow'></i>
+                   </a>
+                </div>
+           </div>
+            <!--Movies Box 2-->
+            <div class="movie-box">
+                <img src="img/kmovie/kmovie-2.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                   <h2 class="movie-title">Ditto</h2>
+                   <span class="movie-type">Romance/Fantasy</span>
+                   <a href="play_pages/Kmovies/movie-2.html" class="watch-btn play-btn">
+                       <i class='bx bx-right-arrow'></i>
+                   </a>
+                </div>
+           </div>
+            <!--Movies Box 3-->
+            <div class="movie-box">
+                <img src="img/kmovie/kmovie-3.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                   <h2 class="movie-title">Forgotten</h2>
+                   <span class="movie-type">Thriller/Mystery</span>
+                   <a href="#" class="watch-btn play-btn">
+                       <i class='bx bx-right-arrow'></i>
+                   </a>
+                </div>
+           </div>
+            <!--Movies Box 4-->
+            <div class="movie-box">
+                <img src="img/kmovie/kmovie-4.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                   <h2 class="movie-title">Parasite</h2>
+                   <span class="movie-type">Thriller</span>
+                   <a href="#" class="watch-btn play-btn">
+                       <i class='bx bx-right-arrow'></i>
+                   </a>
+                </div>
+           </div>
+            <!--Movies Box 5-->
+            <div class="movie-box">
+                <img src="img/kmovie/kmovie-5.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                   <h2 class="movie-title">Train to Busan</h2>
+                   <span class="movie-type">Action/Thriller/Horror</span>
+                   <a href="#" class="watch-btn play-btn">
+                       <i class='bx bx-right-arrow'></i>
+                   </a>
+                </div>
+           </div>
+            <!--Movies Box 6-->
+            <div class="movie-box">
+                <img src="img/kmovie/kmovie-6.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                   <h2 class="movie-title">Midnight</h2>
+                   <span class="movie-type">Action/Thriller/Mystery</span>
+                   <a href="#" class="watch-btn play-btn">
+                       <i class='bx bx-right-arrow'></i>
+                   </a>
+                </div>
+           </div>
+            <!--Movies Box 7-->
+            <div class="movie-box">
+                <img src="img/kmovie/kmovie-7.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                   <h2 class="movie-title">Special Delivery</h2>
+                   <span class="movie-type">Mystery/Sci-Fi</span>
+                   <a href="#" class="watch-btn play-btn">
+                       <i class='bx bx-right-arrow'></i>
+                   </a>
+                </div>
+           </div>
+            <!--Movies Box 8-->
+            <div class="movie-box">
+                <img src="img/kmovie/kmovie-8.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                   <h2 class="movie-title">Unlocked</h2>
+                   <span class="movie-type">Thriller/Mystery/Crime</span>
+                   <a href="#" class="watch-btn play-btn">
+                       <i class='bx bx-right-arrow'></i>
+                   </a>
+                </div>
+           </div>
+        </div>
+    </section>
+
+    <!--next page-->
+    <div class="next-page">
+        <a href="More-pages/kmovies.html" class="next-btn">More</a>
+    </div>
+
+      <!-- copyriaght-->
+      <div class="copyright">
+        <p>&copy; SEOUL SCREEN all right Reserved</p>
+    </div>
+
+
+     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"> </script>
+    <script src="js/SubMenu.js"> </script>
+
+</body>
+</html>

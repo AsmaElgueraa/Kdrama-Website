@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20th Century Girl</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="../../img/la-tele.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="../../index.html" class="logo">
+                Seoul<span>Screen</span>
+            </a>
+            <!--navbar-->
+            <div class="navbar">
+                <a href="../../index.html" class="nav-link nav-active">
+                    <i class='bx bx-home'></i>
+                    <span class="nav-link-title">Home</span>
+                </a>
+                <a href="../../index.html" class="nav-link">
+                    <i class='bx bxs-hot'></i>
+                    <span class="nav-link-title">Trending</span>
+                </a>
+                <a href="../../index.html" class="nav-link">
+                    <i class='bx bx-cctv'></i>
+                    <span class="nav-link-title">Korean Drama</span>
+                </a>
+                <a href="../../index.html" class="nav-link">
+                    <i class='bx bx-tv'></i>
+                    <span class="nav-link-title">Korean Movies</span>
+                </a>
+                <a href="../../index.html" class="nav-link">
+                    <i class='bx bx-heart'></i>
+                    <span class="nav-link-title">Favourite</span>
+                </a>
+            </div>
+            <div class="search-box">
+                <input type="search" name="" id="search-input" placeholder="Search movie">
+                <i class='bx bx-search'></i>
+            </div>
+            <a href="#" class="user">
+                <img src="../../img/user.png" alt="" class="user-pic" onclick="toggleMenu()">
+            </a>
+
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="../../img/user.png" alt="">
+                        <h2>james aldrino</h2>
+                    </div>
+                    <hr>
+    
+                    <a href="" class="sub-menu-link">
+                        <i class='bx bxs-user'></i>
+                        <p>Edit Profile</p>
+                    <span>></span>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <i class='bx bxs-cog'></i>
+                        <p>settings & Privacy</p>
+                    <span>></span>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <i class='bx bxs-help-circle' ></i>
+                        <p>Help & Support</p>
+                    <span>></span>
+                    </a>
+                    <a href="../../login.html" class="sub-menu-link">
+                        <i class='bx bxs-log-out'></i>
+                        <p>Logout</p>
+                    <span>></span>
+                    </a>
+    
+                </div>
+            </div>
+    </header>
+    <!--play Movie Container-->
+    <div class="play-container container">
+        <!--play image-->
+        <img src="img-play/movie-1.png" alt="" class="play-img">
+        <!--play text-->
+        <div class="play-text">
+            <h2>20th Century Girl</h2>    
+            <!--Ratings-->
+            <div class="rating">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <!--Tags-->
+            <div class="tags">
+                <span>Romance</span>
+                <span>Youth</span>
+                <span>Melodrama</span>
+
+            </div>
+            <!--trailer btn-->
+            <a href="#" class="watch-btn">
+                <i class='bx bx-right-arrow'></i>
+                <span>Watch the trailer</span>
+            </a>
+        </div>
+         
+            <!--video content-->
+            <div class="video-container">
+                <!--video- box-->
+                <div class="video-box">
+                    <video id="myvideo" src="img-play/trailer-kmovie-1.mp4" controls></video>
+                    <!--close video icon-->
+                    <i class='bx bx-x close-video'></i>
+                </div>
+            </div>
+
+    </div>
+    <!--About-->
+    <div class="about-movie container">
+        <h2>20th Century Girl</h2>
+        <p>In 1999, a teen with a heart of gold begins keeping close tabs on a popular classmate as a favor to her smitten best friend.
+            Bo Ra is 17-year-old high school student. She is good at taekwondo and has a bright and positive personality. She is also a member of the broadcasting club at her school. Woon Ho is a member of the same broadcasting club.
+            Bo Ra is best friends with Yeon Du, who attends the same school. Yeon Du has a crush on Hyun Jin. She asks Bo Ra to find out everything about Hyun Jin and goes to the U.S. to have heart surgery. After that, Bo Ra begins to observe Hyun Jin closely...
+        </p>
+        <!--movie cast-->
+        <h2 class="cast-heading">Movie Cast</h2>
+        <div class="cast">
+            <div class="cast-box">
+                <img src="img-play/movie-1-cast-1.jpg" alt="" class="cast-img">
+                <span class="cast-title">Kim Yoo Jung</span>
+            </div>
+            <div class="cast-box">
+                <img src="img-play/movie-1-cast-2.jpg" alt="" class="cast-img">
+                <span class="cast-title">Byeon Woo Seok</span>
+            </div>
+            <div class="cast-box">
+                <img src="img-play/movie-1-cast-3.jpg" alt="" class="cast-img">
+                <span class="cast-title">Park Jung Woo</span>
+            </div>
+            <div class="cast-box">
+                <img src="img-play/movie-1-cast-4.jpg" alt="" class="cast-img">
+                <span class="cast-title">Roh Yoon Seo</span>
+            </div>
+            <div class="cast-box">
+                <img src="img-play/movie-1-cast-5.jpg" alt="" class="cast-img">
+                <span class="cast-title">Han Hyo Joo</span>
+            </div>
+            <div class="cast-box">
+                <img src="img-play/movie-1-cast-6.jpg" alt="" class="cast-img">
+                <span class="cast-title">Ong Seong Wu</span>
+            </div>
+        </div>
+    </div>
+
+
+      <!--video content-->
+      <div class="video-container-episode">
+        <!--video- box-->
+        <div class="video-box-episode">
+            <video id="myvideo-episode" src="img-play/movie1-play.mp4" controls></video>
+            <!--close video icon-->
+            <i class='bx bx-x close-video-episode'></i>
+        </div>
+    </div>
+
+
+   <!--Episode Section-->
+   <div class="episodes container">
+    <h2 class=" episode-heading">Watch Movie</h2>
+
+        <div class="episode-box">
+            <a href="#" class="watch-btn1">
+                <img src="img-play/movie1-ep.jpg" alt="" class="episode-img">
+                <span class="episode-title">
+                    <i class='bx bxs-show'></i> Movie
+                </span>          
+              </a>
+        </div>
+       
+        
+  
+    </div>
+   
+
+   
+   <!-- copyriaght-->
+   <div class="copyright">
+    <p>&copy; SEOUL SCREEN all right Reserved</p>
+    </div>
+    
+
+
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/play.js"> </script>
+    <script src="../../js/SubMenu.js"> </script>
+
+</body>
+</html>
+
